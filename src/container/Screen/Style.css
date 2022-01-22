@@ -1,0 +1,371 @@
+
+  div {
+    display: block;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+/* filtersection styling */
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.filterPanel {
+    display: flex;
+    background-color: #fff;
+    width: 100%;
+    flex-direction: column;
+    border-radius: 2%;
+    padding-bottom: 30px;
+}
+.filter__header {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.filter__launchYear {
+    padding: 0;
+    margin: 0;
+}
+.subPanel {
+    flex: 1 1;
+    flex-direction: column;
+    padding: 0;
+    margin-top: -4%;
+}
+.subPanel, .subPanel__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subPanel__title {
+    font-weight: 500;
+    padding: 0;
+    font-size: large;
+}
+.subPanel__title:after {
+    content: "";
+    height: 2px;
+    display: block;
+    position: relative;
+    top: 2px!important;
+    left: -10%;
+    right: auto;
+    max-width: 200px;
+    width: 120%;
+    background-color: rgba(0,0,0,.322);
+}
+.subPanel__years {
+    display: flex;
+    flex: 1 1;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 300px;
+}
+.button__container, .year__button {
+    align-items: center;
+    justify-content: center;
+}
+.year__button {
+    background-color: #c5df9d;
+    color: #000;
+    border-radius: 4px;
+    margin-bottom: 10%;
+}
+.year__button__active {
+    background-color: #7aba02;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.button__container {
+    display: flex;
+    flex-basis: 50%;
+}
+.MuiButton-text {
+    padding: 6px 8px;
+}
+.MuiButton-root {
+    color: rgba(0, 0, 0, 0.87);
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+}
+.MuiButtonBase-root {
+    color: inherit;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    display: inline-flex;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    align-items: center;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.MuiButton-root {
+    text-transform: none!important;
+}
+.MuiTouchRipple-root {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow: hidden;
+    position: absolute;
+    border-radius: inherit;
+    pointer-events: none;
+}
+/* loader styling */
+  .loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0b0b0b;
+    display: grid;
+    place-items: center;
+  }
+
+  .loader {
+    border: 16px solid #e3e3e3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    animation: spin 1s linear infinite;
+  }
+/* card Sction styling */
+  .card__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+    flex: 1 1;
+}
+.card {
+    margin-bottom: 40px;
+    background-color: #fff;
+    min-width: 150px;
+    flex-basis: 22%;
+    margin-left: 20px;
+    display: flex!important;
+    align-items: center;
+    object-fit: contain;
+    flex-direction: column;
+    padding-bottom: 2%;
+}
+.card__image {
+    width: 80%;
+    object-fit: contain;
+    background-color: #f2f2f2;
+    margin: 20px;
+    padding-right: 5px;
+}
+.card__content {
+    display: flex;
+    width: 80%;
+    align-items: flex-start;
+    padding-bottom: 2%;
+    flex-direction: column;
+}
+.card__title {
+    color: #494c88;
+    margin-top: 0;
+    font-weight: 900;
+}
+.card__infoHeading {
+    margin-top: 6%;
+    margin-bottom: 0;
+}
+.mission__list {
+    color: #484c94;
+    padding-bottom: 0;
+    margin-left: -1%;
+}
+.card__infoTitle, .mission__list {
+    padding-top: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.card__launchYear {
+    position: static;
+}
+.launch_success, .launch_year {
+    color: #484c94;
+    font-weight: 500;
+}
+.card__successfulLaunch {
+    position: static;
+}
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @media (max-width: 700px){
+    .app__header {
+        font-weight: 700;
+        margin-left: 10px;
+        margin-top: -15px;
+        width: 100%;
+        margin-bottom: -4%;
+        font-size: 24px;
+    }
+    .app, .app__body {
+        flex-direction: column;
+    }
+    .app {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    .app__cards, .app__filter {
+        max-width: 99%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .subPanel__years {
+        display: flex;
+        flex: 1 1;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 310px;
+    }
+    .app__cards {
+        margin-top: 10px;
+    }
+    .app__cards, .app__filter {
+        max-width: 99%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        scroll-behavior: smooth;
+        background-color: #f2f2f2;
+    }
+    .card {
+        flex-basis: 100%;
+        padding: 0;
+        align-items: flex-start;
+        margin: 10px 0;
+    }
+    .card__image {
+        width: 87%;
+        object-fit: contain;
+        background-color: #f2f2f2;
+        padding-right: 0;
+        margin: 25px auto;
+    }
+    .card__content {
+        width: 87%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 5%;
+    }
+    .card__infoHeading, .card__title, .launch_success, .mission__list {
+        font-size: 20px;
+    }
+    .app__footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 0;
+    }
+  }
+
+  @media (max-width: 1440px) and (min-width: 1024px) {
+    .app__header {
+        font-weight: 700;
+        margin-left: 10px;
+        margin-top: -15px;
+        width: 100%;
+    }
+    .app__content {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1;
+        margin-top: -2%;
+    }
+    .app__body {
+        display: flex;
+        margin: 15px 10px 10px;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .app__filter {
+        flex: 0.2 1;
+        margin-right: 0;
+        width: 100%;
+    }
+    .app__cards {
+        flex: 0.8 1;
+        background-color: #fff;
+        margin-left: 10px;
+        width: 100%;
+    }
+    .app__footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 0;
+    }
+  }
